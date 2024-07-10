@@ -2,10 +2,7 @@
     box-sizing: border-box;
     margin:0%;
     padding: 0%;
-    /* font-family:Rovelink Regular; */
-    scrollbar-width: none;
-    background-color: black;
-    color: #4cc9f0; 
+    font-family:sans-serif;
 }
 
 
@@ -41,7 +38,6 @@ a{
 /* position: rative; */
 height: 100vh;
 width:100%;
-
 /* background-color: red; */
 display: flex;
 /* overflow: hidden; */
@@ -52,8 +48,7 @@ justify-content: space-between;
 .text_but{
     position:relative;
     /* width: 100%; */
-    height: 70%;
-    /* background-color: rebeccapurple; */
+    /* height: 100%; */
     left: 100px;
     top:200px;
 }
@@ -80,15 +75,15 @@ font-size:30px;
     width: 200px;
     height: 40px;
     border-radius: 10px;
-    background-color: #4cc9f0;
+    background: linear-gradient(30deg,black,blue);
     transition: width 0.3s, height 0.3s;
     border: none;
     color:white;
 }
 
-.text_but>button:hover{
+button:hover{
 width: 210px;
-background:linear-gradient(30deg,#5e3df4,#7ecfe8);  
+background:linear-gradient(30deg,rgb(48, 48, 48),rgb(63, 63, 251));  
 height:45px;  
 }
 
@@ -119,34 +114,30 @@ margin-right: 15px;
 
 .proj{
     width: 100%;
-    /* height: 75vh; */
-    height: 550px;
-    /* background-color: green; */
+    height: 75vh;
+    background-color: green;
 }
 
 .projtiles{
     display: flex;
     justify-content: space-evenly;
-    overflow: auto;
-    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* transform: rotate(-90deg); */
+    /* transform-origin: right top; */
 }
 
 .tile{
-    flex-shrink: 0;
-    /* background-color: white; */
-    box-shadow: #e500a4 0px 5px 15px;
-    color: #2d00f7;
+    background-color: white;
     margin-top: 70px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
-    border-radius: 30px;
-    padding: 30px;
-    text-align: center;
-    width: 350px;
-    display: inline-block;
-    overflow: hidden;
-    height: 250px;
+    width: 35vw;
+    z-index: 5;
+    height: 40vh;
+    /* transform: rotate(90deg); */
+    /* transform-origin: right top; */
+
 }
 
 .proj>h1{
@@ -162,7 +153,7 @@ margin-right: 15px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #17ffc4;
+    /* background-color: yellow; */
 }
 
 #Contact>h1{
@@ -173,7 +164,6 @@ margin-right: 15px;
 
 .thingsilove{
     height: 60vh;
-    z-index: 2;
     width: 100%;
 }
 
@@ -186,25 +176,23 @@ font-size: 45px;
 .items{
     display: flex;
     justify-content: space-around;
-    overflow: auto;
     /* border: 1px solid black; */
 }
 
 .item{
     /* border: 1px solid black; */
     border-radius: 50px;
-    flex-shrink: 0;
-    border: none;
-    width: 13vw;
-    height: 30vh;
-    padding: 15px;
-    margin: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 20vw;
+    height: 40vh;
     text-align: center;
-    box-shadow:1.5px 1.5px 1.5px #4cc9f0;
-    /* background-color: red; */
+    box-shadow:0.5px 0.5px 0.5px gray;
 }
+
+.item>h2{
+    /* margin-top: 80px; */
+    margin-bottom: 50px;
+}
+
 
 
 .myphoto{
@@ -219,15 +207,29 @@ font-size: 45px;
 
 
 
-.java{
-    width: 100%;
-    /* padding: 10px; */
-    height: 100%;
-    border-radius: 30px;
+#java{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
+#lc{
+    width:90px;
+    height: 90px;
+}
+
+#react{
+    width:90px;
+    height: 90px;
+}
+
+.javap{
+    margin-top: 50px;
+    width: 15vw;
+    margin-left: 40px;
+}
 .outside{
-    background-color: transparent;
+    background-color: black;
     width: 70vw;
     /* color: white; */
     height: 50vh;
@@ -237,22 +239,22 @@ font-size: 45px;
 
 
 .leftside>p{
-    color: #3a0ca3;
-    background-color: transparent ;
     margin: 10px;
-    font-size: 25px;
-    margin-left: 36px;
+    font-size: 20px;
 }
 
 .leftside{
-    background-color:transparent;
-    border: 3px solid black;
+    background-color: blueviolet;
     width: 29vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.leftside>p{
+    font-size: 25px;
+    margin-left: 36px;
+}
 
 .info{
     display: flex;
@@ -260,8 +262,7 @@ font-size: 45px;
     /* flex-direction: column; */
 }
 .rightside{
-    border: 3px solid black;
-    background-color: transparent;
+    background-color: aqua;
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -271,7 +272,6 @@ font-size: 45px;
 
 
 .inputs{
-    background-color: transparent;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -279,11 +279,9 @@ font-size: 45px;
 
 .inputs>input{
     border-radius: 5px;
-    background-color: transparent;
     border: none;
     height: 25px;
     width: 19vw;
-    padding: 5px;
 }
 
 #message{
@@ -293,11 +291,9 @@ font-size: 45px;
     border: none;
     border-radius: 10px;
     padding: 10px;
-    font-size: 15px;
 }
 
 .rightside>h2{
-    background-color: transparent;
     margin-left: 10px;
     margin-bottom: 5px;
 }
@@ -311,4 +307,3 @@ font-size: 45px;
     border: none;
     border-radius: 10px;
 }
-
