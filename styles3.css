@@ -133,7 +133,7 @@ margin-right: 15px;
 
 .tile{
     flex-shrink: 0;
-    /* background-color: white; */
+    background-color: white;
     box-shadow: #e500a4 0px 5px 15px;
     color: #2d00f7;
     margin-top: 70px;
